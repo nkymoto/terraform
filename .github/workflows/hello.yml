@@ -1,0 +1,9 @@
+name: Hello, World! # ワークフローの名前
+on: push # リポジトリのpushイベント時にこのワークフローが実行される
+
+jobs: # 以下jobの定義
+  build: # job ID（jobsのキーとしてユニークであればなんでもいい）
+    name: Greeting # job名
+    runs-on: ubuntu-latest # このjobが実行される仮想環境
+    steps: # job内で実行される処理
+      - run: echo "Hello, World!"
