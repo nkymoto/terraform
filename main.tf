@@ -11,7 +11,7 @@ provider "google" {
 ## storage buckets ##
 ## new bucket ##
 resource "google_storage_bucket" "private-bucket" {
-  name          = "private-bucket-abc123"
+  name          = "private-bucket-abc1234"
   location      = "asia-northeast1"
   storage_class = "REGIONAL"
 
